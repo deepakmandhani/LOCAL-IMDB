@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/padding_15dp"
+    android:paddingTop="@dimen/padding_15dp">
+
+    <RelativeLayout
+        android:id="@+id/header_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/back_button_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_8dp"
+            app:srcCompat="@drawable/ic_arrow_back_black_24dp" />
+
+
+        <TextView
+            android:id="@+id/notes_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/notes_label"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/notes_label_text_size" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/notes_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/submit_button_view"
+        android:layout_below="@id/header_view"
+        android:layout_marginTop="@dimen/margin_20dp"
+        android:background="@android:color/transparent"
+        android:gravity="top"
+        android:hint="Write Here..."
+        android:lineSpacingExtra="@dimen/notes_item_description_line_spacing"
+        android:paddingLeft="@dimen/padding_15dp"
+        android:paddingRight="@dimen/padding_15dp"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/notes_edittext_text_size" />
+
+    <RelativeLayout
+        android:id="@+id/submit_button_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/margin_15dp"
+        android:background="@drawable/notes_submit_button_background"
+        android:paddingBottom="@dimen/padding_10dp"
+        android:paddingTop="@dimen/padding_10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:srcCompat="@drawable/ic_done_black_24dp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

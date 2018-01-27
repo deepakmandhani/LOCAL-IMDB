@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">MyIMDB</string>
+    <string name="action_settings">Settings</string>
+    <string name="notes_label">IMDB</string>
+    <string name="no_notes_availble_message">No notes available as of now</string>
+    <string name="notes_validation_message">Please enter notes to proceed</string>
+    <string name="note_label">IMDB</string>
+    <string name="new_note_label">New Note</string>
+    <string name="edit_note_label">Edit Note</string>
+
+
+    <string-array name="movie_list">
+        <item>The Shawshank Redemption</item>
+        <item>The Godfather</item>
+        <item>The Dark Knight</item>
+        <item>The Godfather: Part II</item>
+        <item>Pulp Fiction</item>
+        <item>Schindler's List</item>
+        <item>The Lord of the Rings: The Return of the King</item>
+        <item>12 Angry Men </item>
+        <item>The Good, the Bad and the Ugly </item>
+        <item>The Lord of the Rings: The Fellowship of the Ring</item>
+    </string-array>
+
+    <string-array name="release_year">
+        <item>1994</item>
+        <item>1972</item>
+        <item>2008</item>
+        <item>1974</item>
+        <item>1994</item>
+        <item>1993</item>
+        <item>2003</item>
+        <item>1957</item>
+        <item>1966</item>
+        <item>2001</item>
+    </string-array>
+
+    <string-array name="ratings">
+        <item>9.3</item>
+        <item>9.2</item>
+        <item>9.0</item>
+        <item>9.0</item>
+        <item>8.9</item>
+        <item>8.9</item>
+        <item>8.9</item>
+        <item>8.9</item>
+        <item>8.9</item>
+        <item>8.8</item>
+    </string-array>
+    
+    <string-array name="movie_code">
+        <item>tt0111161</item>
+        <item>tt0068646</item>
+        <item>tt0468569</item>
+        <item>tt0071562</item>
+        <item>tt0110912</item>
+        <item>tt0108052</item>
+        <item>tt0167260</item>
+        <item>tt0050083</item>
+        <item>tt0060196</item>
+        <item>tt0120737</item>
+    </string-array>
+</resources>
