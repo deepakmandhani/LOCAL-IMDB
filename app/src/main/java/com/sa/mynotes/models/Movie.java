@@ -1,5 +1,7 @@
 package com.sa.mynotes.models;
 
+import android.media.Image;
+
 import org.parceler.Parcel;
 
 import io.realm.RealmObject;
@@ -20,6 +22,8 @@ public class Movie extends RealmObject {
     private String ratings;
 
     private String year;
+
+    private Image image;
 
 
     public String getMovieCode() {
@@ -52,5 +56,13 @@ public class Movie extends RealmObject {
 
     public void setYear(String year) {
         this.year = year;
+    }
+
+    public Image getImage() {
+        return image;
+    }
+
+    public void setImage(Image image) {
+        this.image = image;
     }
 }

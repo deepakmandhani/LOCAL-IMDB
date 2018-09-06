@@ -60,6 +60,11 @@ public class MovieRepoWrapper {
         mRealm.commitTransaction();
     }
 
+    public void addAllMovies(List<Movie> movieList) {
+        mRealm.beginTransaction();
+        mRealm.copyToRealmOrUpdate(movieList);
+        mRealm.commitTransaction();
+    }
     public void closeRealm() {
         mRealm.close();
     }

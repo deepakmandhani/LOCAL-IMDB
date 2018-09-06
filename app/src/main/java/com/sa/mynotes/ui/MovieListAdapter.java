@@ -29,6 +29,9 @@ public class MovieListAdapter extends RecyclerView.Adapter<MovieListAdapter.Movi
     private List<Movie> mNotesList;
 
     public void updateDataSet(List<Movie> mNotesList) {
+        if(mNotesList != null && !mNotesList.isEmpty()){
+            mNotesList.clear();
+        }
         this.mNotesList = mNotesList;
         notifyDataSetChanged();
     }

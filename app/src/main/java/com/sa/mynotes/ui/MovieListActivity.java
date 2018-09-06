@@ -76,8 +76,11 @@ public class MovieListActivity extends AppCompatActivity {
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         mNotesListView.setLayoutManager(linearLayoutManager);
         mNotesListView.setAdapter(movieListAdapter);
-        getMovieData();
-
+        fetchNotesList();
+        if(movieList == null || movieList.isEmpty()){
+            getMovieData();
+            MovieRepoWrapper.getInstance().addAllMovies(movieList);
+        }
     }
 
     /*
